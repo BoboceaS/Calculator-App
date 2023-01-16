@@ -1,7 +1,7 @@
 h1 {  
     text-align: center;  
     padding: 23px;  
-    background-color: black;  
+    background-image: linear-gradient(to right, black, white);  
     color: white;  
     }  
 
@@ -26,7 +26,7 @@ input  {
     text-align: center;
 }
 
-.formstyle  
+.style  
 {  
 width: 300px;  
 height: 350px;  
@@ -38,6 +38,7 @@ background-color: rgb(178, 178, 178);
 }  
 
 #egal {
+    text-align: center;
     width: 150px;
     height: 40px;
 }
@@ -45,4 +46,4 @@ background-color: rgb(178, 178, 178);
 #buton {
     width: 50px;
 }
-    
+
