@@ -1,11 +1,12 @@
 body {
-    background-image:linear-gradient(to right, black, #ff3030);
+    background-image:linear-gradient(to right, black, #58003b);
 }
 
 h1 {  
     text-align: center;  
     padding: 12px;   
     color: white;  
+    background-image: linear-gradient(to right, black, #58003b42);
 }  
   
 .calculator-grid {
@@ -30,6 +31,11 @@ h1 {
   
 .span {
     grid-column: span 4;
+    height: 80px;
+}
+
+.spanclear {
+    grid-column: span 2;
 }
   
 .output {

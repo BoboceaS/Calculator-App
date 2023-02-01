@@ -4,6 +4,10 @@ class Calculator {
       this.currentOperandTextElement = currentOperandTextElement
       this.clear()
     }
+
+    back() {
+      this.currentOperand = this.currentOperand.toString().slice(0, -1)
+    }
   
     clear() {
       this.currentOperand = ''
@@ -86,6 +90,7 @@ class Calculator {
   const operationButtons = document.querySelectorAll('[data-operation]')
   const equalsButton = document.querySelector('[data-equals]')
   const clearButton = document.querySelector('[data-clear]')
+  const backButton = document.querySelector('[data-back]')
   const previousOperandTextElement = document.querySelector('[data-previous-operand]')
   const currentOperandTextElement = document.querySelector('[data-current-operand]')
   
@@ -112,5 +117,10 @@ class Calculator {
   
   clearButton.addEventListener('click', button => {
     calculator.clear()
+    calculator.updateDisplay()
+  })
+
+  backButton.addEventListener('click', button => {
+    calculator.back()
     calculator.updateDisplay()
   })
